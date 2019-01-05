@@ -48,9 +48,15 @@ mo.groups() #Return tuple of groups
 
 
 Parentheses have a special meaning in regular expressions
+
+```python
 phoneNumRegex = re.compile(r'(\(\d\d\d\)) (\d\d\d-\d\d\d\d)')
 mo = phoneNumRegex.search('My phone number is (415) 555-4242.')
-#mo.group(1) #'(415)'
-#mo.group(2) #'555-4242'
+mo.group(1) #'(415)'
+mo.group(2) #'555-4242'
+```
 
-#Matching multiple stuff using 'pipe' or | 
+
+
+Matching multiple groups using '**pipe**' or **|** 
+
